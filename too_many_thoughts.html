@@ -11,220 +11,428 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="too many thoughts" startnode="1" creator="Twine" creator-version="2.3.5" ifid="12BF2C10-A988-46EE-9EB7-FCBD89CB6CA4" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="too many thoughts" startnode="1" creator="Twine" creator-version="2.3.5" ifid="12BF2C10-A988-46EE-9EB7-FCBD89CB6CA4" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+tw-story {
   color: black;
-  background-color: #c6e7fb;
+  /* background-image: url("https://github.com/jy-clairechoi/jy-clairechoi.github.io/blob/master/background.jpg");
+  background-size: cover; */
+  background-color: #9dd0ef;
   font-size: 16px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="91,19" size="100,100">A day in the life of a college student with Attention-Deficit/Hyperactivity Disorder (ADHD), a mental condition that mainly causes difficulty with maintaining attention and working memory. etc
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+  padding-top: 3em;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="67,19" size="100,100">(align: &quot;=&gt;&lt;=&quot;)[&#39;&#39;too many thoughts&#39;&#39;]
+(align: &quot;=&gt;&lt;=&quot;)[&#39;&#39;by: Claire Choi&#39;&#39;]
+
+A day in the life of a college student with Attention-Deficit/Hyperactivity Disorder (ADHD).
 
 
-//Disclaimer: This game by no means represents what every student with ADHD experiences, it is just an autobiographical piece of my personal struggle with ADHD.//
+&quot;Adult attention-deficit/hyperactivity disorder (ADHD) is a mental health disorder that includes a combination of persistent problems, such as difficulty paying attention, hyperactivity and impulsive behavior.
+
+Some people with ADHD have fewer symptoms as they age, but some adults continue to have major symptoms that interfere with daily functioning. In adults, the main features of ADHD may include difficulty paying attention, impulsiveness and restlessness. Symptoms can range from mild to severe.
+
+Many adults with ADHD aren&#39;t aware they have it — they just know that everyday tasks can be a challenge. Adults with ADHD may find it difficult to focus and prioritize, leading to missed deadlines and forgotten meetings or social plans. The inability to control impulses can range from impatience waiting in line or driving in traffic to mood swings and outbursts of anger.&quot;
+
+&lt;a href=&quot;https://www.mayoclinic.org/diseases-conditions/adult-adhd/symptoms-causes/syc-20350878&quot;&gt;(Mayo Clinic)&lt;/a&gt;
 
 
-[[Start]]
+//Disclaimer: This game is by no means a comprehensive representation of what every student with ADHD experiences, but is an autobiographical piece of my personal struggle with ADHD.//
 
-</tw-passagedata><tw-passagedata pid="2" name="Wake up" tags="" position="300,188" size="100,100">The weather&#39;s nice— I should&#39;ve forced myself to wake up earlier so I could walk to class... 
-*sigh* Whatever, can&#39;t do anything about it now, I just need to make the shuttle to get to class on time now.
+
+[[Begin]]
+
+</tw-passagedata><tw-passagedata pid="2" name="Wake up" tags="" position="206,174" size="100,100">The weather&#39;s nice. I should&#39;ve forced myself to wake up earlier so I could walk to class... 
+
+//[*]sigh[*]//  Whatever, I can&#39;t do anything about it anymore. I just need to make the shuttle to get to class on time now.
+
 
 [[Go to class]]
-</tw-passagedata><tw-passagedata pid="3" name="Library" tags="" position="876,349" size="100,100">(set: $library to true)
-(set: $end to $end+1)
+</tw-passagedata><tw-passagedata pid="3" name="Library" tags="" position="994,373" size="100,100">Ok, let&#39;s get to WORK!
 
-&lt;!--You&#39;re trying to do hw but you think of something else you had to do / see something on your screen that reminded you of something else / remembered you had to tell your mom that one thing so you get up / mouth feels bored so you get up to find a snack to eat --&gt;
-
-Ok, let&#39;s get to work!
-
-I&#39;ve taken out my laptop, let&#39;s first make a to do list on the Stickies app.
-
-
-* [[Quiet Time / Journal]]
+I&#39;m first going to make a to do list.
+* [[Journal]]
 * [[Register for classes]]
 * [[CS problem sets]]
-* [[Apply to internships]]
+&lt;!-- * [[Apply to internships]]--&gt;
+
+[[Now let&#39;s get to work!-&gt;study]]
+
+(set: $library to true)
+
+&lt;!--You&#39;re trying to do hw but you think of something else you had to do / see something on your screen that reminded you of something else / remembered you had to tell your mom that one thing so you get up / bored for no reason so you get up to find a snack to eat --&gt;
+</tw-passagedata><tw-passagedata pid="4" name="GSU" tags="" position="2058,430" size="100,100">Mmmm, what to eat, what to eat...
+
+Am I feeling [[Basho-&gt;food]], [[Panda Express-&gt;food]], [[Loose Leaves-&gt;food]], [[Rhett&#39;s-&gt;food]]... or oooh, should I try [[The Market-&gt;food]]?
 
 
-[[too much brain energy used or too unproductive -&gt;Next]] </tw-passagedata><tw-passagedata pid="4" name="GSU" tags="" position="1597,352" size="100,100">(set: $GSU to true)
-(set: $end to $end+1)
+(set: $GSU to true)</tw-passagedata><tw-passagedata pid="5" name="Friends&#39; Room" tags="" position="2847,431" size="100,100">Ah, the all-too-familiar somewhat spacious yet cramped and slightly too hot Warren quad.
 
-Mmmm, I&#39;m feeling some [[Panda Express]] today!
+Every time I come here, there&#39;s always someone playing //[[Super Smash Bros]]//.
 
-
-[[Full, now what? -&gt;Next]] </tw-passagedata><tw-passagedata pid="5" name="Friends&#39; Room" tags="" position="2364,351" size="100,100">(set: $friend to true)
-(set: $end to $end+1)
-
-watch them play [[Smash]]
-catch up/[[talk]] about classes, plans for the week
-try to learn/play [[guitar]]
+I don&#39;t play though, so if anyone isn&#39;t playing or studying, I should ask them to teach me how to play the [[guitar]] or just [[talk]] and catch up.
 
 
+It&#39;s been a while now, and I feel like I&#39;ve rested too much. I need to [[get going-&gt;Next]].
 
-[[Time to go -&gt;Next]] </tw-passagedata><tw-passagedata pid="6" name="Startup" tags="startup" position="491,57" size="100,100">(set: $end to 0)
-(set: $library to false)
+
+(set: $friend to true)</tw-passagedata><tw-passagedata pid="6" name="Startup" tags="startup" position="527,49" size="100,100">(set: $library to false)
 (set: $GSU to false)
 (set: $dorm to false)
-(set: $friend to false)</tw-passagedata><tw-passagedata pid="7" name="Next" tags="" position="1103,199" size="100,100">Hmm... Now I want to go to
+(set: $friend to false)
+
+</tw-passagedata><tw-passagedata pid="7" name="Next" tags="" position="1111,227" size="100,100">Hmm... Now I want to go to
 
 {(if: $library is true) [&lt;s&gt;the Library&lt;/s&gt;]
-(else:)[the [[Library]]]}
+(else:)[[[the Library-&gt;Library]]]}
 {(if: $GSU is true) [&lt;s&gt;the GSU&lt;/s&gt;]
-(else:)[the [[GSU]]]}
+(else:)[[[the GSU-&gt;GSU]]]}
 {(if: $friend is true) [&lt;s&gt;my Friends&#39; Room&lt;/s&gt;]
-(else:)[my [[Friends&#39; Room]]]}
+(else:)[[[my Friends&#39; Room-&gt;Friends&#39; Room]]]}
 {(if: $dorm is true) [&lt;s&gt;my Dorm&lt;/s&gt;]
-(else:)[my [[Dorm]]]}
+(else:)[[[my Dorm-&gt;Dorm]]]}
 
-(if: $end is 4)[The day is over, time to [[go]] sleep.]</tw-passagedata><tw-passagedata pid="8" name="Dorm" tags="" position="1957,346" size="100,100">(set: $dorm to true)
-(set: $end to $end+1)
+(if: $library is true and $GSU is true and $friend is true and $dorm is true)[The day is over, time to [[go]] sleep.]
 
-Why do I dread but love the [[walk]] back to my dorm every time?
+
+
+&lt;!-- Note:  work on 
+LIBRARY - &quot;Apply to internships&quot;, &quot;social media&quot;
+GSU - &quot;finance&quot;, &quot;come sit&quot; --&gt;</tw-passagedata><tw-passagedata pid="8" name="Dorm" tags="" position="2412,426" size="100,100">Why do I dread but also love the [[walk]] back to West every time?
 
 Should I just take the [[shuttle]]?
 
-Since my friends all live here, should I just go to [[their room -&gt;Friends&#39; Room]] instead?
+Actually, since my friends all live in Central, should I just go to [[their room-&gt;Friends&#39; Room]] instead?
 
+</tw-passagedata><tw-passagedata pid="9" name="Go to class" tags="" position="363,250" size="100,100">//[*] y a w n [*]// I&#39;m so sleepy, I can&#39;t stay awake.
 
+And the professor&#39;s talking, but I [[can&#39;t focus]]!
+</tw-passagedata><tw-passagedata pid="10" name="bag" tags="" position="179,563" size="100,100">Do I want [[sweet]], [[salty]], or [[minty]]?</tw-passagedata><tw-passagedata pid="11" name="sweet" tags="" position="44,716" size="100,100">Darn, I just finished my last pack of smarties yesterday! I need to buy some more snacks. I want more dried mangos, I should go to [[Trader Joe&#39;s]].
 
+(click-append: &quot;dried mangos,&quot;)[ oh, and Spud Crunchies!]</tw-passagedata><tw-passagedata pid="12" name="salty" tags="" position="172,720" size="100,100">I don&#39;t have any chips on me. I&#39;ll get something from City Co after class.
 
-[[Now what? -&gt;Next]] </tw-passagedata><tw-passagedata pid="9" name="Go to class" tags="" position="302,343" size="100,100">*yawn* I&#39;m so sleepy, but class is about to start— pay attention!
-
-Ugh, the professor&#39;s talking but I [[can&#39;t focus]]. </tw-passagedata><tw-passagedata pid="10" name="Do I have something to eat in my bag to keep me awake?" tags="" position="147,495" size="100,100">Do I want [[sweet]], [[salty]], or [[minty]]?</tw-passagedata><tw-passagedata pid="11" name="sweet" tags="" position="25,640" size="100,100">Darn, I just finished my last pack of smarties yesterday! I need to buy some more snacks. I want more dried mangos, I should go to [[Trader Joe&#39;s]].
-
-(click-append: &quot;dried mangos,&quot;)[ oh, and Spud Crunchies!]</tw-passagedata><tw-passagedata pid="12" name="salty" tags="" position="135,639" size="100,100">[[What else? -&gt;Do I have something to eat in my bag to keep me awake?]]
-</tw-passagedata><tw-passagedata pid="13" name="minty" tags="" position="249,640" size="100,100">Mentos Fresh never lets me down.
-
-It doesn&#39;t become too sweet like 5, or become too hard like Trident. Perfect!
+[[For now, what else do I have? -&gt;bag]]
+</tw-passagedata><tw-passagedata pid="13" name="minty" tags="" position="298,718" size="100,100">Yes, this is it! //Mentos Fresh// never lets me down— it doesn&#39;t become too sweet like //5 Gum//, or become too hard like //Trident//. It&#39;s perfect!
 
 This mintiness reminds me of crisp air...
-When was the last time I went out for a walk along the esplanade?
-Oh right, it was with Hannah, Sean, David, and Evan last semester.
-Hannah painting on her sketchbook, Sean playing on his guitar, and David chilling on the dock, and Evan...
-What was Evan doing again?
+
+(click-append: &quot;This mintiness reminds me of crisp air...&quot;) [
+
+Mmm that reminds me, when was the last time I went out for a walk along the esplanade?]
+
+(click-append: &quot;Mmm that reminds me, when was the last time I went out for a walk along the esplanade?&quot;) [
+
+Oh right, it was with Hannah, Elliot, David, and Evan last semester.]
+
+(click-append: &quot;Oh right, it was with Hannah, Sean, David, and Evan last semester.&quot;) [
+
+Hannah painting on her sketchbook, Elliot playing on his guitar, and David chilling on the dock, and Evan...]
+
+(click-append: &quot;Evan...&quot;) [
+
+What was Evan doing again?]
+
+(click-append: &quot;What was Evan doing again?&quot;) [
+
+Oh! He was doing his CS homework!]
+
+(click-append: &quot;CS homework!&quot;) [
+
+Speaking of which, what&#39;s my homework for this class again?]
+
+(click-append: &quot;Speaking of which, what&#39;s my homework for this class again?&quot;) [
 
 
-Oh! He was doing his CS homework!
-Speaking of which, what&#39;s my homework for this class again?
-[[I should pay attention again. -&gt;can&#39;t focus]]</tw-passagedata><tw-passagedata pid="14" name="Trader Joe&#39;s" tags="" position="25,790" size="100,100">When will I have time to go there? 
+[[I should pay attention again. -&gt;end of class]]]</tw-passagedata><tw-passagedata pid="14" name="Trader Joe&#39;s" tags="" position="42,866" size="100,100">When will I have time to go there? 
 
-Oh, wait, I need to go to Star Market this weekend to buy cake, I&#39;ll just buy snacks there, too. 
+Wait, I need to go to Star Market this weekend to buy cake, so I&#39;ll just buy snacks there, too. 
 I can get granola bars!
 (click-replace: &quot;granola bars&quot;)[string cheese (I&#39;ve had enough granola bars for breakfast)]
 (click-replace: &quot;string cheese (I&#39;ve had enough granola bars for breakfast)&quot;)[trail mix (string cheese isn&#39;t filling enough)]
 (click-replace: &quot;trail mix (string cheese isn&#39;t filling enough)&quot;)[
 
 
+[[Wait, what&#39;s the professor talking about now? -&gt;end of class]]]
+
+</tw-passagedata><tw-passagedata pid="15" name="go" tags="" position="767,60" size="100,100">//[*]y a w n[*]// Wow, I got nothing done, but I can catch up and finish everything I had to if I grind tomorrow! //(Psh, like that&#39;s gonna happen. Whatever, that&#39;s a problem for tomorrow.)// 
 
 
-[[Wait, what&#39;s the professor talking about now? -&gt;can&#39;t focus]]]
+[[Sleep]]</tw-passagedata><tw-passagedata pid="16" name="Sleep" tags="" position="619,188" size="100,100">Whew, wasn&#39;t that a wild ride?
 
-</tw-passagedata><tw-passagedata pid="15" name="go" tags="" position="647,60" size="100,100">**yawn** Wow, I got nothing done, but I can just do everything tomorrow if I grind! //Psh, like that&#39;s gonna happen. Whatever, that&#39;s a problem for tomorrow.// 
-
-[[End]]</tw-passagedata><tw-passagedata pid="16" name="End" tags="" position="519,200" size="100,100">Thanks for finishing the game!
-
-Wasn&#39;t that a wild ride?
+Thanks for finishing the game!
 
 
-Again, not everyone&#39;s experience with ADHD is like this, but if you feel like you can relate, see a psychiatrist to get diagnosed. There are prescribed medications available to increase your attention span and help with your studies. etc
+Again, not everyone&#39;s experience with ADHD is like this, but this is roughly what goes on in my head in a day.
 
-(link: &quot;Click for more information on adult ADHD&quot;)[(goto-url: &#39;https://www.cdc.gov/ncbddd/adhd/facts.html#ADHDAdults&#39;)]</tw-passagedata><tw-passagedata pid="17" name="Start" tags="" position="270,17" size="100,100">*buzz* *buzz* *buzz* 
+If you&#39;re interested in learning more about ADHD, &lt;a href=&quot;https://www.mayoclinic.org/diseases-conditions/adult-adhd/symptoms-causes/syc-20350878&quot;&gt;click here for the link from the title page&lt;/a&gt;, and &lt;a href= &quot;https://chadd.org/for-adults/overview/&quot;&gt;click here for an additional resource&lt;/a&gt;.
+</tw-passagedata><tw-passagedata pid="17" name="Begin" tags="" position="203,17" size="100,100">//[*]bzzzz bzzzz bzzzz[*]//
 
-Ugh, 8:30? I need to wake up now to do my makeup... Nevermind, I&#39;ll just wake up at 8:40 and do my makeup after class.
+Ugh, 8:30? I need to wake up now to do my makeup... 
 
-
-
-*buzz* *buzz* *buzz* 
-
-[[Wake up]]</tw-passagedata><tw-passagedata pid="18" name="can&#39;t focus" tags="" position="285,489" size="100,100">[[Do I have something to eat in my bag to keep me awake?]]
-
-What do I have to do today?
-(click-replace: &quot;What do I have to do today?&quot;)[Shoot! I forgot I have a discussion post to do. I need to remember to do that later.]
-
-(click-replace: &quot;Shoot! I forgot I have a discussion post to do. I need to remember to do that later.&quot;)[Anyways, what should I [[do after class?]]]
-	
-Professor: &quot;So for the next class...&quot;
-
-Shoot! I actually need to pay attention now.
-
-*whew* Class is finally over!
-
-[[Next]]</tw-passagedata><tw-passagedata pid="19" name="Quiet Time / Journal" tags="" position="605,497" size="100,100">read the Bible, reflect, meditate, pray
-
-back to [[Library]] </tw-passagedata><tw-passagedata pid="20" name="Register for classes" tags="" position="752,502" size="100,100">[[ask friends]] what classes they&#39;re taking
-waste hours on figuring out the best classes for [[hub]]
-
-back to [[Library]] </tw-passagedata><tw-passagedata pid="21" name="CS problem sets" tags="" position="967,502" size="100,100">try to figure it out
-ask friend to come over and [[work on it together]]
-[[Chegg]]
+Nevermind, I&#39;ll just wake up at 8:40 and do my makeup after class.
 
 
-back to [[Library]] </tw-passagedata><tw-passagedata pid="22" name="Apply to internships" tags="" position="1220,502" size="100,100">think about [[successful]] upperclassmen
+[[Snooze]]</tw-passagedata><tw-passagedata pid="18" name="can&#39;t focus" tags="" position="285,412" size="100,100">Let me think about what do I have to do today.
+
+[[Do I have something to eat in my bag to keep me awake?-&gt;bag]]
+
+
+
+
+(click-append: &quot;Let me think about what do I have to do today.&quot;)[
+
+Shoot! I forgot I have a discussion post to do. I need to remember to do that later.]
+
+(click-append: &quot;Shoot! I forgot I have a discussion post to do. I need to remember to do that later.&quot;)[
+
+Anyways, what should I [[do after class?]]]</tw-passagedata><tw-passagedata pid="19" name="Register for classes" tags="" position="895,573" size="100,100">Registration&#39;s coming up, so I need to figure out my schedule.
+
+I want to take classes with my friends, though, so I should ask them which ones they&#39;re planning on taking.
+
+And I already know I&#39;m going to waste hours figuring out the best classes to fulfill my HUB credits and piece together my schedule for next semester (and maybe even the semester after). 
+
+I know I don&#39;t need to but once I start I can&#39;t stop. 
+
+Such a useless thing to waste my time and concentration on. 
+
+Why can&#39;t I concentrate this hard on my homework? Ugh.
+
+
+[[back -&gt;Library]] </tw-passagedata><tw-passagedata pid="20" name="CS problem sets" tags="" position="1043,578" size="100,100">Dang, I have a CS 132 problem set AND a CS 210 problem set to do.
+
+I can&#39;t even predict how long they&#39;re going to take me because it depends on how fast I figure out the problems I run into along the way.
+
+I should ask Evan to come work on it together later...
+
+And thank God for my blue light filtering glasses. My eyes would be dead from staring at my screen all day without them.
+
+
+[[back -&gt;Library]] </tw-passagedata><tw-passagedata pid="21" name="Apply to internships" tags="" position="1234,586" size="100,100">think about [[successful]] upperclassmen
 dream companies
 have to mass apply
 [[resume]]
 
-back to [[Library]] </tw-passagedata><tw-passagedata pid="23" name="do after class?" tags="" position="434,497" size="100,100">[[Should I grab a meal?]]
+[[back -&gt;Library]] </tw-passagedata><tw-passagedata pid="22" name="do after class?" tags="" position="474,564" size="100,100">[[Should I grab a meal?]]
 
-[[Should I go to my friend&#39;s room to hang out before I study?]]</tw-passagedata><tw-passagedata pid="24" name="Should I grab a meal?" tags="" position="386,640" size="100,100">[[or... -&gt;do after class?]]
-</tw-passagedata><tw-passagedata pid="25" name="Should I go to my friend&#39;s room to hang out before I study?" tags="" position="506,640" size="100,100">[[or... -&gt;do after class?]]
-</tw-passagedata><tw-passagedata pid="26" name="study" tags="" position="1457,625" size="100,100">Nevermind, there&#39;s no way I can study right now, I&#39;m way too hungry.
+Or [[should I go to my friend&#39;s room to hang out before I study? -&gt;Should I go to my friend&#39;s room]]
 
-[[What else? -&gt;Panda Express]]</tw-passagedata><tw-passagedata pid="27" name="chill" tags="" position="1607,625" size="100,100">Time to check [[Instagram]] to see what everyone else is up to!
+Or [[should I FOCUS on the lecture!!-&gt;end of class]]</tw-passagedata><tw-passagedata pid="23" name="Should I grab a meal?" tags="" position="438,719" size="100,100">I haven&#39;t eaten all day so that doesn&#39;t sound like too bad of a plan.
 
-[[Snapchat]]
+I should see if any of my friends are free to eat with me.
 
-[[Facebook]]
+But usually they all either have class or already ate by the time I&#39;m done.
+
+Shoot, I should&#39;ve asked them sooner.
+
+Oh well, I can just eat alone too. And there&#39;s usually people hanging out in the GSU anyways, so I might find some friends to eat with there too.
 
 
+[[What else can I do? -&gt;do after class?]]
+</tw-passagedata><tw-passagedata pid="24" name="Should I go to my friend&#39;s room" tags="" position="565,720" size="100,100">Hmmm, sounds like a bad idea, but I haven&#39;t hung out there in a while..
+
+It wouldn&#39;t hurt to stop by for a few minutes... right?
+
+[[What else... -&gt;do after class?]]
+</tw-passagedata><tw-passagedata pid="25" name="social media" tags="" position="1595,776" size="100,100">Instagram
+
+Snapchat
+
+Facebook
 
 
-[[What else? -&gt;Panda Express]]</tw-passagedata><tw-passagedata pid="28" name="look for friends" tags="" position="1832,625" size="100,100">Hey, is that Aro and Ray [[over there]]?</tw-passagedata><tw-passagedata pid="29" name="Panda Express" tags="" position="1612,486" size="100,100">Now, while I&#39;m eating, should I
-* [[study]]
-* [[chill]]
-* [[look for friends]]</tw-passagedata><tw-passagedata pid="30" name="over there" tags="" position="1832,775" size="100,100">Aro&#39;s shirt is so cute!
-(click-append: &quot;Aro&#39;s shirt is so cute!&quot;) [ I wonder where she got it.]
+OMG, 2 hours passed! What am I doing, I need to [[WORKKK-&gt;work]]!!</tw-passagedata><tw-passagedata pid="26" name="look for friends" tags="" position="2163,763" size="100,100">Hey, is that Aro and Ray [[over there]]?</tw-passagedata><tw-passagedata pid="27" name="food" tags="" position="2073,600" size="100,100">Now, that I&#39;ve gotten my food...
+
+While I&#39;m eating, should I [[eat alone and study]] or [[look for friends to eat and hang out with-&gt;look for friends]]?</tw-passagedata><tw-passagedata pid="28" name="Go to their table" tags="" position="2180,992" size="100,100">Aro&#39;s shirt is so cute!
+
 Ray looks like he&#39;s working.
-(click-append: &quot;Ray looks like he&#39;s working.&quot;) [ Is it his [[finance]] homework?]
-
 
 
 Me: &quot;Hey guys! Can I join you?&quot;
 
-Aro: &quot;Of course! Come sit next to me! How are you?&quot;
+Aro: &quot;Oh, hey Claire! Of course, [[come sit]] next to me!&quot;
 
 
-[[Leave -&gt;Next]] </tw-passagedata><tw-passagedata pid="31" name="finance" tags="" position="1832,925" size="100,100">I don&#39;t get how he does finance, I could never...
+
+(click-append: &quot;Aro&#39;s shirt is so cute!&quot;) [ I wonder where she got it.]
+(click-append: &quot;I wonder where she got it.&quot;) [ Oh, it must be //Uniqlo//— I remember her telling me that she doesn&#39;t mind her fashion too much so her go-to is their simple clothes.]
+
+(click-append: &quot;Ray looks like he&#39;s working.&quot;) [ Wait, Ray? Is working?! His study habits are almost as bad as mine!]
+(click-append: &quot;Wait, Ray? Is working?! His study habits are almost as bad as mine!&quot;) [ Oh, it must be his finance homework. People in his class have been complaining about how tedious the work is.]</tw-passagedata><tw-passagedata pid="29" name="finance" tags="" position="2210,1144" size="100,100">I don&#39;t get how he does finance, I could never...
 
 Charles majored in finance and CS though, that&#39;s impressive. And now he&#39;s a software engineer at Amazon! 
 Should I give finance a shot? Just kidding, I can&#39;t even understand Ray&#39;s crash course of finance.
 
-[[Anyways -&gt;over there]]</tw-passagedata><tw-passagedata pid="32" name="Instagram" tags="" position="1457,775" size="100,100">[[back to -&gt;chill]]</tw-passagedata><tw-passagedata pid="33" name="Snapchat" tags="" position="1580,774" size="100,100">[[back to -&gt;chill]]</tw-passagedata><tw-passagedata pid="34" name="Facebook" tags="" position="1705,777" size="100,100">[[back to -&gt;chill]]</tw-passagedata><tw-passagedata pid="35" name="walk" tags="" position="1882,496" size="100,100">[[leave again -&gt;Next]] </tw-passagedata><tw-passagedata pid="36" name="shuttle" tags="" position="2032,496" size="100,100">[[leave again -&gt;Next]] </tw-passagedata><tw-passagedata pid="37" name="Smash" tags="" position="2255,501" size="100,100">[[What else? -&gt;Friends&#39; Room]] </tw-passagedata><tw-passagedata pid="38" name="talk" tags="" position="2384,501" size="100,100">[[classwork]]
-[[plans]]
-[[study sessions]]
+[[Anyways -&gt;Go to their table]]</tw-passagedata><tw-passagedata pid="30" name="Instagram" tags="" position="1518,945" size="100,100">stories -&gt; fun filters, places
+posts -&gt; comments, stalking
+ads -&gt; jewelry, stationary, fashion
 
 
-[[What else? -&gt;Friends&#39; Room]] </tw-passagedata><tw-passagedata pid="39" name="guitar" tags="" position="2699,499" size="100,100">[[chords]] for worship music
-[[fingerpicking]]
-want my own
-fingers hurt, starting to blister
+[[back -&gt;social media]]</tw-passagedata><tw-passagedata pid="31" name="Snapchat" tags="" position="1641,944" size="100,100">streaks -&gt; how people&#39;s day went
+stories -&gt; funny moments
+other -&gt; useless time wasting stories (news, pop culture, life hacks, etc)
 
-[[What else? -&gt;Friends&#39; Room]] </tw-passagedata><tw-passagedata pid="40" name="ask friends" tags="" position="662,639" size="100,100">[[and -&gt;Register for classes]]</tw-passagedata><tw-passagedata pid="41" name="hub" tags="" position="792,637" size="100,100">[[ew but better if i take it with friends! -&gt;Register for classes]]</tw-passagedata><tw-passagedata pid="42" name="work on it together" tags="" position="918,637" size="100,100">call a friend over
 
-[[done -&gt;CS problem sets]]</tw-passagedata><tw-passagedata pid="43" name="Chegg" tags="" position="1042,637" size="100,100">need to buy subscription...
-make new emails, keep doing trials?
-split cost with friends?
+[[back -&gt;social media]]</tw-passagedata><tw-passagedata pid="32" name="Facebook" tags="" position="1768,943" size="100,100">groups 
+posts (tasty, dodo, etc)
 
-[[need to think about it more -&gt;CS problem sets]]
-</tw-passagedata><tw-passagedata pid="44" name="successful" tags="" position="1175,636" size="100,100">[[PCT]]
+
+[[back -&gt;social media]]</tw-passagedata><tw-passagedata pid="33" name="walk" tags="" position="2337,612" size="100,100">//[*]deep breathe in[*]// The walk home never fails to calm me. 
+
+Thank God Comm. Ave. is so safe and packed with students all day!
+
+I love walking across the vast bridge, especially when I run into friends walking to class!
+
+It&#39;s so interesting to see how there&#39;s never the same group of people walking with me. BU&#39;s so big!
+
+
+[[Arrive]]
+
+
+(set: $dorm to true)
+</tw-passagedata><tw-passagedata pid="34" name="shuttle" tags="" position="2493,615" size="100,100">I hope a BU Shuttle is coming soon. I should check the app.
+
+There&#39;s always a fight to get on the bus, and I hate it when people push me to try to get on first.
+
+Actually, should I just [[walk]]?
+
+It looks like a bus is on its way in [[a couple of minutes]].
+
+
+[[Get on the bus -&gt;bus]]
+
+
+(set: $dorm to true)
+</tw-passagedata><tw-passagedata pid="35" name="Super Smash Bros" tags="" position="2738,617" size="100,100">When I think of //Smash//, I think back to my childhood when //Wiis// were popular.
+
+Back then, I sometimes played //Smash// with my brother, just for fun.
+
+I remember I only chose to fight with Pit.
+
+I had no strategies, and I didn&#39;t even know what move every button made, but I had fun just playing with or against my brother.
+
+I&#39;m generally not very good at games, so in college, I haven&#39;t even tried to play a game of //Smash//.
+
+
+[[back -&gt;Friends&#39; Room]] 
+
+
+(click-append: &quot;Pit&quot;) [ because his angel wings and bow and arrow were really cool]
+
+(click-append: &quot;games&quot;) [ (unless they&#39;re puzzles)]</tw-passagedata><tw-passagedata pid="36" name="talk" tags="" position="2883,615" size="100,100">Most of the time, we talk about what classwork we have to work that week and any plans we have.
+
+We remind each other about Friday service, update each other on recent or upcoming 1on1s, or discuss what we learned in family group.
+
+
+[[back -&gt;Friends&#39; Room]] </tw-passagedata><tw-passagedata pid="37" name="guitar" tags="" position="3030,616" size="100,100">Coming into college, I was surprised how most of my friends from church knew how to play the guitar. 
+
+Ever since last semester, I&#39;ve been wanting to learn how to play some [[chords]] to play some worship music.
+
+Back in middle school, I started doing community service tutoring afterschool kids music and math. There, I saw how cool the guitar was and began wanting to learn how to play [[fingerstyle]].
+
+I&#39;ve learned quite a bit this year, but I want my own guitar to practice more often on my own (but I know I also probably won&#39;t ever &quot;have the time&quot; to learn because I&#39;ll always have work that I procrastinated on to do).
+
+
+[[back -&gt;Friends&#39; Room]] </tw-passagedata><tw-passagedata pid="38" name="successful" tags="" position="1216,759" size="100,100">[[PCT]]
 [[BostonHacks]]
 [[Symphony]]
 
-[[can i be as successful? -&gt;Apply to internships]]</tw-passagedata><tw-passagedata pid="45" name="resume" tags="" position="1310,641" size="100,100">spent so long ;-; but finally done!
+[[can i be as successful? -&gt;Apply to internships]]</tw-passagedata><tw-passagedata pid="39" name="resume" tags="" position="1351,764" size="100,100">spent so long ;-; but finally done!
 
-[[just need to mass apply -&gt;Apply to internships]]</tw-passagedata><tw-passagedata pid="46" name="PCT" tags="" position="1025,786" size="100,100">[[too successful -&gt;successful]]</tw-passagedata><tw-passagedata pid="47" name="BostonHacks" tags="" position="1175,786" size="100,100">[[too successful -&gt;successful]]</tw-passagedata><tw-passagedata pid="48" name="Symphony" tags="" position="1325,786" size="100,100">[[too successful -&gt;successful]]</tw-passagedata><tw-passagedata pid="49" name="classwork" tags="" position="2234,651" size="100,100">[[talk more -&gt;talk]]</tw-passagedata><tw-passagedata pid="50" name="plans" tags="" position="2384,651" size="100,100">[[service]]
-[[family group]]
-[[1on1s]]
+[[just need to mass apply -&gt;Apply to internships]]</tw-passagedata><tw-passagedata pid="40" name="PCT" tags="" position="1058,939" size="100,100">[[too successful -&gt;successful]]</tw-passagedata><tw-passagedata pid="41" name="BostonHacks" tags="" position="1208,939" size="100,100">[[too successful -&gt;successful]]</tw-passagedata><tw-passagedata pid="42" name="Symphony" tags="" position="1358,939" size="100,100">[[too successful -&gt;successful]]</tw-passagedata><tw-passagedata pid="43" name="chords" tags="" position="2997,778" size="100,100">There are only four chords that most worship songs typically use, so I&#39;ve been learning those.
+
+Now I need to practice strumming and putting the chords together.
 
 
-[[talk more -&gt;talk]]</tw-passagedata><tw-passagedata pid="51" name="study sessions" tags="" position="2534,651" size="100,100">[[talk more -&gt;talk]]</tw-passagedata><tw-passagedata pid="52" name="service" tags="" position="2234,801" size="100,100">[[other -&gt;plans]]</tw-passagedata><tw-passagedata pid="53" name="family group" tags="" position="2384,801" size="100,100">[[other -&gt;plans]]</tw-passagedata><tw-passagedata pid="54" name="1on1s" tags="" position="2534,801" size="100,100">[[other -&gt;plans]]</tw-passagedata><tw-passagedata pid="55" name="chords" tags="" position="2654,649" size="100,100">[[guitar]]</tw-passagedata><tw-passagedata pid="56" name="fingerpicking" tags="" position="2774,649" size="100,100">[[guitar]]</tw-passagedata></tw-storydata>
+[[back -&gt;guitar]]</tw-passagedata><tw-passagedata pid="44" name="fingerstyle" tags="" position="3117,778" size="100,100">In middle school, the song that got me interested in the guitar was &quot;Wi ing Wi ing&quot; by Hyukoh.
+
+Elliot was the first person I met with a guitar in his room, and he had happened to just start learning that song and taught me how to play it as well.
+
+I practice a lot on my quad friend&#39;s guitar now.
+
+After I perfect it, I want to learn either Hyukoh&#39;s &quot;Comes and Goes&quot; or Dean&#39;s &quot;Instagram&quot;.
+
+
+[[back -&gt;guitar]]</tw-passagedata><tw-passagedata pid="45" name="Snooze" tags="" position="353,48" size="100,100">//[*]bzzzz bzzzz bzzzz[*]//
+
+
+[[Wake up]] </tw-passagedata><tw-passagedata pid="46" name="end of class" tags="" position="471,405" size="100,100">Professor: &quot;So for the next class...&quot;
+
+Shoot!! I actually have to pay attention for the rest now.
+
+Professor: &quot;Don&#39;t forget the assignment due Friday. Have a great day everybody!&quot;
+
+
+//[*]whew[*]// Class is finally over!
+
+[[leave -&gt;Next]]</tw-passagedata><tw-passagedata pid="47" name="Journal" tags="" position="737,572" size="100,100">I need put aside enough time to read the Bible, reflect, meditate, and then pray.
+
+I also need to finish journaling about my mission trip,
+&lt;div style=&quot;text-indent: 2em;&quot;&gt;and write my testimony,
+&lt;div style=&quot;text-indent: 4em;&quot;&gt;and send it out.
+It&#39;s been WEEKS since I came back, I can&#39;t believe I STILL haven&#39;t finished this!
+
+I need to finish copying down sermon notes, too! UGH, there&#39;s so much to do!
+
+
+[[back -&gt;Library]] </tw-passagedata><tw-passagedata pid="48" name="study" tags="" position="1565,594" size="100,100">Actually, let me check my [[social media]] quickly before I start. I want to see what everyone&#39;s up to.
+</tw-passagedata><tw-passagedata pid="49" name="eat alone and study" tags="" position="1997,765" size="100,100">Nevermind, there&#39;s no way I can study right now, I&#39;m way too hungry.
+
+[[Let me go see if anyone&#39;s already hanging out here. -&gt;look for friends]]</tw-passagedata><tw-passagedata pid="50" name="work" tags="" position="1745,686" size="100,100">Whew, ok, nevermind. I&#39;m so unproductive right now and I can&#39;t get anywork done. 
+
+I&#39;ve used enough brain energy today (haha, who am I kidding)! 
+
+But at this rate, I might as well just [[leave-&gt;Next]].</tw-passagedata><tw-passagedata pid="51" name="come sit" tags="" position="2085,1144" size="100,100">Me: &quot;I almost tripped on my way here and my heart is still pounding.&quot;
+
+Aro: &quot;Of course you&#39;d trip with a plate full of food, Claire. Wait, was that weird scream just now you?&quot;
+
+Me: &quot;You heard that?!! That means everyone heard it...&quot;
+
+Oh well, I&#39;m pretty much used to it by now. I always make the weirdest noises when I&#39;m surprised.
+
+
+Anyways, I&#39;m full now and I should go get some work done (actually, this time). Time to [[head out-&gt;Next]].
+</tw-passagedata><tw-passagedata pid="52" name="Arrive" tags="" position="2332,920" size="100,100">Ahhh, home sweet home.
+
+I need to tell my roommate what happened today at the GSU.
+
+I wonder if anything fun happened in her day.
+
+She was probably too busy with work and her clubs.
+
+But knowing her, she might have an interesting or embarrassing story to tell too!
+
+
+(if: $library is true and $GSU is true and $friend is true)[I&#39;m so tired, I think I&#39;m going to [[sleep-&gt;go]].]
+(else:) [I should go [[back to campus-&gt;Next]] again.]</tw-passagedata><tw-passagedata pid="53" name="a couple of minutes" tags="" position="2553,758" size="100,100">But we we all know the &quot;5 minutes&quot; on the app doesn&#39;t really mean the bus will arrive in that time.
+
+Maybe I can make a new app for the BU Shuttle.
+
+It&#39;ll be a big project but I could work on it with a couple friends!
+
+Actually, I already know I probably won&#39;t follow through with the idea all the way, so I shouldn&#39;t even bring it up.
+
+
+[[Keep waiting -&gt;shuttle]]</tw-passagedata><tw-passagedata pid="54" name="bus" tags="" position="2430,755" size="100,100">Why do I always feel so tired even when I accomplish nothing during the day?
+
+I feel like taking a nap, but I obviously can&#39;t because I&#39;m in a bus with no one I know.
+
+I&#39;ll check my social media again to keep me awake. Plus, it&#39;ll have to be quick because the ride is only about 10 minutes long.
+
+
+[[Arrive]]</tw-passagedata><tw-passagedata pid="55" name="over there" tags="" position="2052,909" size="100,100">EeEEeaAaAyyaAaa!!
+
+OMG I almost tripped with my food in front of everybody!
+
+That was a close call, but still SO embarrassing.
+
+Why do I always do this, but never learn my lesson?
+
+I need to pay more attention to my surroundings.
+
+I hope Aro and Ray didn&#39;t see me...
+
+
+[[Go to their table]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
